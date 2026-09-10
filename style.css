@@ -1,0 +1,122 @@
+/*
+  Global styles for Green Horizons
+  Mobile-first, responsive design
+  Color scheme variables declared here
+*/
+:root{
+  --green-1:#2E7D32; /* primary */
+  --green-2:#4CAF50; /* light green */
+  --amber:#FFC107;
+  --off-white:#F5F5F5;
+  --dark:#333333;
+  --max-width:1100px;
+}
+
+/* Base reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Open Sans',sans-serif;
+  color:var(--dark);
+  background:var(--off-white);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Container */
+.container{width:100%;max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+
+/* Header & nav */
+header{background:white;border-bottom:1px solid #e6e6e6}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo img{height:40px}
+.site-title{font-weight:700;font-family:'Montserrat',sans-serif;color:var(--green-1)}
+
+.nav-toggle{display:flex;align-items:center;gap:.5rem}
+.nav-toggle button{background:transparent;border:2px solid var(--green-2);padding:.35rem .6rem;border-radius:6px;color:var(--green-2)}
+
+nav ul{list-style:none;display:flex;gap:.75rem;flex-wrap:wrap}
+nav a{display:block;padding:.6rem .5rem;color:var(--dark);text-decoration:none;font-weight:600}
+nav a.active{color:var(--green-1)}
+
+/* Mobile nav */
+.mobile-nav{display:none}
+.nav-actions{display:flex;gap:.5rem}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,rgba(46,125,50,0.05),rgba(76,175,80,0.02));padding:2.5rem 0}
+.hero-inner{display:flex;flex-direction:column;gap:1.2rem;align-items:flex-start}
+.hero h1{font-family:'Montserrat',sans-serif;font-size:2rem;color:var(--green-1)}
+.hero p.lead{max-width:46ch;color:#444}
+.cta-group{display:flex;gap:.6rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--green-1);color:white}
+.btn-secondary{background:transparent;border:2px solid var(--green-1);color:var(--green-1)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.2rem 0}
+.stat{background:white;padding:1rem;border-radius:8px;text-align:center;border:1px solid #eee}
+.stat .num{font-size:1.4rem;font-weight:800;color:var(--green-1)}
+.stat .label{color:#666}
+
+/* Cards grid */
+.grid-3{display:grid;grid-template-columns:1fr;gap:1rem}
+.card{background:white;padding:1rem;border-radius:10px;border:1px solid #eee}
+.card h3{font-family:'Montserrat',sans-serif;color:var(--green-1);margin-bottom:.5rem}
+
+/* Featured projects */
+.projects{display:grid;grid-template-columns:1fr;gap:1rem}
+.project-card{display:flex;gap:.8rem;align-items:flex-start}
+.project-card img{width:110px;height:80px;object-fit:cover;border-radius:8px}
+
+/* CTA section */
+.cta-section{background:linear-gradient(90deg,var(--green-2),var(--green-1));color:white;padding:1.2rem;border-radius:10px;text-align:center}
+
+/* Footer */
+footer{margin-top:1.6rem;background:#fff;padding:1.4rem 0;border-top:1px solid #e9e9e9}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.footer h4{margin-bottom:.6rem}
+
+/* Forms */
+form .field{margin-bottom:.8rem}
+label{display:block;margin-bottom:.3rem;font-weight:600}
+input[type=text],input[type=email],select,textarea{width:100%;padding:.6rem;border-radius:6px;border:1px solid #ddd}
+button[type=submit]{background:var(--green-1);color:white;padding:.6rem 1rem;border:none;border-radius:6px}
+
+/* Utilities */
+.muted{color:#666}
+
+/* Larger screens */
+@media(min-width:768px){
+  .nav-toggle{display:none}
+  .mobile-nav{display:block}
+  nav ul{display:flex}
+  .hero-inner{flex-direction:row;justify-content:space-between;align-items:center}
+  .hero h1{font-size:2.6rem}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .projects{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:repeat(4,1fr)}
+}
+
+@media(min-width:1100px){
+  .container{padding:0}
+}
+
+/* Projects filter */
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.tag{padding:.35rem .6rem;border-radius:20px;border:1px solid #e0e0e0;background:white}
+.tag.active{background:var(--green-2);color:white;border-color:var(--green-2)}
+
+/* FAQ accordion */
+.faq-item{background:white;padding:1rem;border-radius:8px;border:1px solid #eee;margin-bottom:.6rem}
+.faq-question{display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.faq-answer{margin-top:.6rem;display:none}
+.faq-item.open .faq-answer{display:block}
+
+/* Minor tweaks */
+.status{font-size:.8rem;padding:.25rem .5rem;border-radius:6px;font-weight:700}
+.status.active{background:rgba(76,175,80,0.15);color:var(--green-1);border:1px solid rgba(76,175,80,0.2)}
+.status.completed{background:#f0f0f0;color:#666}
+.status.upcoming{background:rgba(255,193,7,0.12);color:var(--amber);border:1px solid rgba(255,193,7,0.18)}
