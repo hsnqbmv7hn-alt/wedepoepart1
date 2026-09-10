@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Get Involved — Green Horizons</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+          <div>
+            <div class="site-title">Green Horizons</div>
+            <div class="muted">Growing communities, nurturing nature</div>
+          </div>
+        </div>
+        <div class="nav-toggle">
+          <nav id="navList">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="get-involved.html" class="active">Get Involved</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a class="btn btn-primary" href="get-involved.html">Donate</a>
+            <button id="navToggle" class="btn btn-secondary"><i class="fa fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Get Involved</h1>
+          <p class="lead">Multiple ways to support our mission — volunteering, sponsorship, and donations.</p>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:1rem">
+        <h2>Volunteer</h2>
+        <div class="card">
+          <p class="muted">Join hands-on planting days, lead workshops, or support community events. Volunteer slots are available year-round.</p>
+          <form>
+            <div class="field"><label for="vol-name">Full name</label><input id="vol-name" type="text" required></div>
+            <div class="field"><label for="vol-email">Email</label><input id="vol-email" type="email" required></div>
+            <div class="field"><label for="vol-areas">Interests</label><select id="vol-areas"><option>Tree Planting</option><option>Education</option><option>Events</option></select></div>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:1rem">
+        <h2>Sponsor</h2>
+        <div class="grid-3">
+          <div class="card"><h3>Seed</h3><p class="muted">$500 — supports community workshop supplies.</p></div>
+          <div class="card"><h3>Grow</h3><p class="muted">$2,500 — funds trees and planting infrastructure.</p></div>
+          <div class="card"><h3>Thrive</h3><p class="muted">$10,000 — supports multi-site education programs.</p></div>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:1rem">
+        <h2>Donate</h2>
+        <div class="card">
+          <p class="muted">One-time or recurring donations help sustain our programs. We accept online payments and checks.</p>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem">
+            <a class="btn btn-primary" href="#">Donate $25</a>
+            <a class="btn btn-primary" href="#">Donate $100</a>
+            <a class="btn btn-primary" href="#">Donate $500</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:1rem">
+        <h2>Volunteer Enquiry</h2>
+        <div class="card">
+          <form>
+            <div class="field"><label for="enq-name">Name</label><input id="enq-name" type="text" required></div>
+            <div class="field"><label for="enq-email">Email</label><input id="enq-email" type="email" required></div>
+            <div class="field"><label for="enq-msg">Message</label><textarea id="enq-msg" rows="4" required></textarea></div>
+            <button type="submit">Send Enquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h4>About</h4>
+          <p class="muted">Green Horizons is an environmental non-profit restoring nature in cities and empowering communities.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="muted" style="list-style:none;padding-left:0">
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="muted">Email: info@greenhorizons.org<br>Phone: (555) 123-4567</div>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <form>
+            <div class="field"><label for="gi-news">Email</label><input id="gi-news" type="email" placeholder="you@example.com" required></div>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
