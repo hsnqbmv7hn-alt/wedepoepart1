@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="100%" height="100%" fill="#F1F8F3"/>
+  <text x="24" y="40" font-family="Montserrat, sans-serif" font-size="20" fill="#2E7D32">About Green Horizons</text>
+  <rect x="24" y="60" width="432" height="200" fill="#C8E6C9" rx="10"/>
+</svg>

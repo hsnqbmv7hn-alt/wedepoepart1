@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="#ffffff"/>
+  <g>
+    <circle cx="30" cy="30" r="20" fill="#2E7D32"/>
+    <path d="M20 25 L30 35 L40 20" stroke="#F5F5F5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="36" font-family="Montserrat, sans-serif" font-size="18" fill="#2E7D32">Green Horizons</text>
+  </g>
+</svg>
